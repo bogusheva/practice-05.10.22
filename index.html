@@ -10,57 +10,67 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./src/styles/styles.css" />
     <title>Practice task 4</title>
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <div class="logo-holder">
-          <a href="#" class="logo-link">
-            <img src="./src/img/Logo.svg" alt="logo productly" />
-          </a>
-        </div>
-        <nav class="nav">
-          <ul class="nav-list">
-            <li class="nav-item active">
-              <a href="#" class="nav-link">Product</a>
+        <div class="row align-items-center justify-content-center">
+          <div class="col-4 logo-holder">
+            <a href="#" class="logo-link">
+              <img src="./src/img/Logo.svg" alt="logo productly" />
+            </a>
+          </div>
+          <nav class="col-5 nav">
+            <ul class="container nav-list">
+              <li class="nav-item active">
+                <a href="#" class="nav-link">Product</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Customers</a>
+              </li>
+              <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Resources</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="col-3 btn-list">
+            <li class="btn-item">
+              <a href="#" class="btn btn-transparent">Sign In</a>
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Customers</a>
-            </li>
-            <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Resources</a>
+            <li class="btn-item">
+              <a href="#" class="btn btn-small">Sign Up</a>
             </li>
           </ul>
-        </nav>
-        <ul class="btn-list">
-          <li class="btn-item">
-            <a href="#" class="btn btn-transparent">Sign In</a>
-          </li>
-          <li class="btn-item">
-            <a href="#" class="btn btn-small">Sign Up</a>
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
     <main class="main">
       <section class="hero-section">
         <div class="container">
-          <div class="hero-text">
-            <h1>The Design Thinking superpowers</h1>
-            <div class="text-holder">
-              <p>
-                Tools, tutorials, design and innovation experts, all in one
-                place! The most intuitive way to imagine your next user
-                experience.
-              </p>
+          <div class="row align-items-center">
+            <div class="col-6 hero-text">
+              <h1>The Design Thinking superpowers</h1>
+              <div class="text-holder">
+                <p>
+                  Tools, tutorials, design and innovation experts, all in one
+                  place! The most intuitive way to imagine your next user
+                  experience.
+                </p>
+              </div>
+              <a href="#" class="btn">Get Started</a>
             </div>
-            <a href="#" class="btn">Get Started</a>
-          </div>
-          <div class="img-holder">
-            <img src="./src/img/people.svg" alt="happy people" />
+            <div class="col-6 img-holder">
+              <img src="./src/img/people.svg" alt="happy people" />
+            </div>
           </div>
         </div>
       </section>
@@ -70,7 +80,7 @@
             <h2>We design tools to unveil your superpowers</h2>
           </div>
           <div class="row">
-            <div class="col">
+            <div class="col-3">
               <div class="icon-holder">
                 <img src="./src/img/icon-arrow.svg" alt="icon" />
               </div>
@@ -79,7 +89,7 @@
                 While most people enjoy casino gambling,
               </div>
             </div>
-            <div class="col">
+            <div class="col-3">
               <div class="icon-holder">
                 <img src="./src/img/icon-second.svg" alt="icon" />
               </div>
@@ -88,7 +98,7 @@
                 Sports betting, lottery and bingo playing for the fun
               </div>
             </div>
-            <div class="col">
+            <div class="col-3">
               <div class="icon-holder">
                 <img src="./src/img/icon-heart.svg" alt="icon" />
               </div>
@@ -97,7 +107,7 @@
                 The Myspace page defines the individual.
               </div>
             </div>
-            <div class="col">
+            <div class="col-3">
               <div class="icon-holder">
                 <img src="./src/img/icon-hours.svg" alt="icon" />
               </div>
@@ -114,115 +124,123 @@
       </section>
       <section class="design-section">
         <div class="container">
-          <div class="img-holder">
-            <img src="./src/img/Image-redman.svg" alt="red man" />
-          </div>
-          <div class="text-col">
-            <span class="pseudo-title">Effortless validation for</span>
-            <h2>Design professionals</h2>
-            <p>
-              The Myspace page defines the individual, his or her
-              characteristics, traits, personal choices and the overall
-              personality of the person.
-            </p>
-            <div class="text-holder">
-              <strong>Accessory Makers</strong>
-              <p>
-                While most people enjoy casino gambling, sports betting, lottery
-                and bingo playing for the fun
-              </p>
+          <div class="row flex-row-reverse">
+            <div class="col-7 img-holder">
+              <img src="./src/img/Image-redman.svg" alt="red man" />
             </div>
-            <div class="text-holder">
-              <strong>Alterationists</strong>
+            <div class="col-5 text-col">
+              <span class="pseudo-title">Effortless validation for</span>
+              <h2>Design professionals</h2>
               <p>
-                If you are looking for a new way to promote your business that
-                won’t cost you more money,
+                The Myspace page defines the individual, his or her
+                characteristics, traits, personal choices and the overall
+                personality of the person.
               </p>
-            </div>
-            <div class="text-holder">
-              <strong>Custom Design designers</strong>
-              <p>
-                If you are looking for a new way to promote your business that
-                won’t cost you more money,
-              </p>
+              <div class="text-holder">
+                <strong>Accessory Makers</strong>
+                <p>
+                  While most people enjoy casino gambling, sports betting,
+                  lottery and bingo playing for the fun
+                </p>
+              </div>
+              <div class="text-holder">
+                <strong>Alterationists</strong>
+                <p>
+                  If you are looking for a new way to promote your business that
+                  won’t cost you more money,
+                </p>
+              </div>
+              <div class="text-holder">
+                <strong>Custom Design designers</strong>
+                <p>
+                  If you are looking for a new way to promote your business that
+                  won’t cost you more money,
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
       <section class="design-section design-section-revert">
         <div class="container">
-          <div class="img-holder">
-            <img
-              src="./src/img/Image-blueman.svg"
-              alt="product manager image"
-            />
-          </div>
-          <div class="text-col">
-            <span class="pseudo-title">Easier decision making for</span>
-            <h2>Product Managers</h2>
-            <p>
-              The Myspace page defines the individual, his or her
-              characteristics, traits, personal choices and the overall
-              personality of the person.
-            </p>
-            <ul class="product-manager-list">
-              <li>
-                <img src="./src/img/icon-mark.svg" alt="icon mark" />
-                <p>Never worry about overpaying for your energy bill again.</p>
-              </li>
-              <li>
-                <img src="./src/img/icon-mark.svg" alt="icon mark" />
-                <p>
-                  We will only switch you to energy companies that we trust and
-                  will treat you right.
-                </p>
-              </li>
-              <li>
-                <img src="./src/img/icon-mark.svg" alt="icon mark" />
-                <p>
-                  We track the markets daily and know where the savings are.
-                </p>
-              </li>
-            </ul>
+          <div class="row">
+            <div class="col-7 img-holder">
+              <img
+                src="./src/img/Image-blueman.svg"
+                alt="product manager image"
+              />
+            </div>
+            <div class="col-5 text-col">
+              <span class="pseudo-title">Easier decision making for</span>
+              <h2>Product Managers</h2>
+              <p>
+                The Myspace page defines the individual, his or her
+                characteristics, traits, personal choices and the overall
+                personality of the person.
+              </p>
+              <ul class="product-manager-list">
+                <li>
+                  <img src="./src/img/icon-mark.svg" alt="icon mark" />
+                  <p>
+                    Never worry about overpaying for your energy bill again.
+                  </p>
+                </li>
+                <li>
+                  <img src="./src/img/icon-mark.svg" alt="icon mark" />
+                  <p>
+                    We will only switch you to energy companies that we trust
+                    and will treat you right.
+                  </p>
+                </li>
+                <li>
+                  <img src="./src/img/icon-mark.svg" alt="icon mark" />
+                  <p>
+                    We track the markets daily and know where the savings are.
+                  </p>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
       <section class="design-section">
         <div class="container">
-          <div class="img-holder">
-            <img
-              src="./src/img/Image-yellowman.svg"
-              alt="marketers section image"
-            />
-          </div>
-          <div class="text-col">
-            <span class="pseudo-title">Optimisation for</span>
-            <h2>Marketers</h2>
-            <p>
-              Few would argue that, despite the advancements of feminism over
-              the past three decades, women still face a double standard when it
-              comes to their behavior.
-            </p>
-            <div class="text-holder">
-              <strong>Accessory Makers</strong>
-              <p>
-                While most people enjoy casino gambling, sports betting, lottery
-                and bingo playing for the fun
-              </p>
+          <div class="row flex-row-reverse">
+            <div class="col-7 img-holder">
+              <img
+                src="./src/img/Image-yellowman.svg"
+                alt="marketers section image"
+              />
             </div>
-            <div class="text-holder">
-              <strong>Alterationists</strong>
+            <div class="col-5 text-col">
+              <span class="pseudo-title">Optimisation for</span>
+              <h2>Marketers</h2>
               <p>
-                If you are looking for a new way to promote your business that
-                won’t cost you more money,
+                Few would argue that, despite the advancements of feminism over
+                the past three decades, women still face a double standard when
+                it comes to their behavior.
               </p>
-            </div>
-            <div class="text-holder">
-              <strong>Custom Design designers</strong>
-              <p>
-                If you are looking for a new way to promote your business that
-                won’t cost you more money,
-              </p>
+              <div class="text-holder">
+                <strong>Accessory Makers</strong>
+                <p>
+                  While most people enjoy casino gambling, sports betting,
+                  lottery and bingo playing for the fun
+                </p>
+              </div>
+              <div class="text-holder">
+                <strong>Alterationists</strong>
+                <p>
+                  If you are looking for a new way to promote your business that
+                  won’t cost you more money,
+                </p>
+              </div>
+              <div class="text-holder">
+                <strong>Custom Design designers</strong>
+                <p>
+                  If you are looking for a new way to promote your business that
+                  won’t cost you more money,
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -231,46 +249,54 @@
     <footer class="footer">
       <span class="footer-line"></span>
       <div class="container">
-        <div class="logo-holder footer">
-          <a href="#" class="logo-link">
-            <img src="./src/img/Logo.svg" alt="logo productly" />
-          </a>
-        </div>
-        <ul class="footer-list quick-links">
-          <li>Quick Links</li>
-          <li>
-            <a href="#" class="footer-list-link">About Us</a>
-          </li>
-          <li>
-            <a href="#" class="footer-list-link">Blog</a>
-          </li>
-          <li><a href="#" class="footer-list-link">Contact</a></li>
-          <li>
-            <a href="#" class="footer-list-link">FAQ</a>
-          </li>
-        </ul>
-        <ul class="footer-list legal-stuff">
-          <li>Legal Stuff</li>
-          <li>
-            <a href="#" class="footer-list-link">Disclaimer</a>
-          </li>
-          <li>
-            <a href="#" class="footer-list-link">Financing</a>
-          </li>
-          <li><a href="#" class="footer-list-link">Privacy Policy</a></li>
-          <li>
-            <a href="#" class="footer-list-link">Terms of Service</a>
-          </li>
-        </ul>
-        <div class="sign-up-form">
-          <p>Knowing you're always on the best energy deal.</p>
-          <input
-            class="footer-form-input"
-            type="text"
-            placeholder="Enter your phone number"
-          />
-          <div class="btn-holder">
-            <a href="#" class="btn btn-holder">Sign Up Now</a>
+        <div class="row">
+          <div class="col-2 logo-holder footer">
+            <a href="#" class="logo-link">
+              <img src="./src/img/Logo.svg" alt="logo productly" />
+            </a>
+          </div>
+          <div class="col-2 footer-lists">
+            <span class="footer-headings">Quick Links</span>
+            <ul class="footer-list">
+              <li>
+                <a href="#" class="footer-list-link">About Us</a>
+              </li>
+              <li>
+                <a href="#" class="footer-list-link">Blog</a>
+              </li>
+              <li><a href="#" class="footer-list-link">Contact</a></li>
+              <li>
+                <a href="#" class="footer-list-link">FAQ</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-3 footer-lists">
+            <span class="footer-headings">Legal Stuff</span>
+            <ul class="footer-list legal-stuff">
+              <li>
+                <a href="#" class="footer-list-link">Disclaimer</a>
+              </li>
+              <li>
+                <a href="#" class="footer-list-link">Financing</a>
+              </li>
+              <li><a href="#" class="footer-list-link">Privacy Policy</a></li>
+              <li>
+                <a href="#" class="footer-list-link">Terms of Service</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-4 sign-up-form">
+            <span class="footer-headings"
+              >Knowing you're always on the best energy deal.</span
+            >
+            <form class="sign-up-form">
+              <input
+                class="footer-form-input"
+                type="text"
+                placeholder="Enter your phone number"
+              />
+              <button class="btn btn-holder">Sign Up Now</button>
+            </form>
           </div>
         </div>
       </div>
