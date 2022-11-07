@@ -1,0 +1,60 @@
+@import "../base/variables";
+@import "../base/mixin";
+
+.btn {
+  width: 180px;
+  display: inline-block;
+  background-color: $orange;
+  padding: 12px 25px;
+  font-weight: $font-weight-bold;
+  border-radius: 4px;
+  text-decoration: none;
+  text-align: center;
+  color: $white;
+  border: 1px solid $orange;
+  transition: all ease-in-out 0.3s;
+  font-family: $font-family-second, $font-family-fallback;
+
+  &:hover {
+    background-color: $white;
+    border-color: $hover-button;
+    color: $dark-brown;
+  }
+
+  &.btn-small {
+    width: 110px;
+    padding: 9px;
+
+    @include tablet-view {
+      font-size: $font-XXS;
+      padding: 2px;
+      width: 60px;
+    }
+  }
+
+  &.btn-transparent {
+    width: 110px;
+    padding: 9px;
+    background-color: $white;
+    border-color: $hover-button;
+    color: $dark-brown;
+
+    &:hover {
+      background-color: $orange;
+      border: 1px solid $orange;
+      color: $white;
+    }
+
+    @include tablet-view {
+      font-size: $font-XXS;
+      padding: 2px;
+      width: 60px;
+    }
+  }
+
+  &.small-btn {
+    font-weight: $font-weight-semi-bold;
+    line-height: 20px;
+    color: $dark-brown;
+  }
+}

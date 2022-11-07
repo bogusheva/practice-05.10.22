@@ -1,0 +1,62 @@
+@import "./variables";
+@import "./mixin";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: $font-XS;
+  font-weight: $font-weight-medium;
+  line-height: 26px;
+  letter-spacing: 0px;
+  color: $brown;
+  text-align: left;
+  font-family: $font-family-main, $font-family-fallback;
+  @include tablet-view {
+    font-size: $font-XXS;
+  }
+}
+a {
+  transition: color ease-in-out 0.3s;
+}
+h1 {
+  font-size: $font-XL;
+  line-height: 54px;
+  color: $dark-brown;
+  margin: 0 0 30px;
+  @include tablet-view {
+    font-size: $font-M;
+  }
+}
+h2 {
+  font-size: $font-L;
+  line-height: 44px;
+  margin: 0 0 50px;
+  color: $dark-brown;
+  @include tablet-view {
+    font-size: $font-S;
+  }
+}
+h3 {
+  font-weight: $font-weight-semi-bold;
+  font-size: $font-M;
+  line-height: 27px;
+  color: $dark-brown;
+  margin: 0 0 16px;
+  @include tablet-view {
+    font-size: $font-XS;
+  }
+}
+p {
+  margin: 0 0 40px;
+}
+img {
+  max-width: 100%;
+}
+.container {
+  max-width: 1224px;
+}

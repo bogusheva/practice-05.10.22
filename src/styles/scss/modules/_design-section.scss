@@ -1,0 +1,46 @@
+@import "../base/variables";
+@import "../base/mixin";
+
+.design-section {
+  margin-bottom: 100px;
+
+  &:nth-child(even) {
+    .img-holder {
+      padding-right: 110px;
+      padding-left: 0;
+    }
+  }
+
+  .img-holder {
+    padding-left: 110px;
+  }
+
+  .text-col h2 {
+    margin-bottom: 20px;
+  }
+
+  .text-holder strong {
+    margin-bottom: 10px;
+    display: block;
+  }
+}
+
+.product-manager-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    img {
+      display: inline;
+      width: 10%;
+      float: left;
+    }
+    p {
+      display: inline;
+      width: 90%;
+      float: left;
+      padding: 0 10px;
+    }
+  }
+}

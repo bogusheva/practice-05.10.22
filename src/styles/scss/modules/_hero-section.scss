@@ -1,0 +1,24 @@
+@import "../base/variables";
+@import "../base/mixin";
+
+.hero-section {
+  margin-bottom: 100px;
+  padding: 70px 0 0;
+
+  .container {
+    align-items: center;
+
+    .img-holder {
+      max-width: 644px;
+    }
+  }
+
+  .hero-text {
+    width: calc(100% - 644px);
+    padding-right: 56px;
+
+    .text-holder {
+      margin: 0 0 20px;
+    }
+  }
+}

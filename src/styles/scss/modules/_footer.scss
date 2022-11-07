@@ -1,0 +1,82 @@
+@import "../base/variables";
+@import "../base/mixin";
+
+.footer {
+  .container {
+    padding: 70px 0;
+
+    .footer-headings {
+      font-size: $font-S;
+      font-weight: $font-weight-bold;
+      color: $dark-brown;
+      display: block;
+      margin-bottom: 30px;
+
+      @include tablet-view {
+        font-size: $font-XXS;
+      }
+    }
+
+    .logo-holder.footer {
+      display: inline;
+      margin-right: 130px;
+
+      @include tablet-view {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .footer-line {
+    display: block;
+    border-bottom: 1px solid $footer-line;
+    max-width: 1230px;
+    margin: 0 auto;
+  }
+}
+
+.footer-lists {
+  padding-right: 70px;
+  @include tablet-view {
+    padding-right: 10px;
+  }
+
+  .footer-list {
+    list-style: none;
+    display: inline;
+    margin: 0;
+    padding: 0;
+
+    li {
+      font-size: $font-XS;
+      font-weight: $font-weight-medium;
+      line-height: 26px;
+      padding-bottom: 13px;
+
+      @include tablet-view {
+        font-size: $font-XXS;
+      }
+    }
+    .footer-list-link {
+      text-decoration: none;
+      color: $brown;
+    }
+  }
+}
+
+.sign-up-form {
+  display: inline;
+  max-width: 360px;
+
+  .footer-form-input {
+    max-width: 100%;
+    width: 260px;
+    height: 50px;
+    font-size: $font-XS;
+    margin-bottom: 20px;
+
+    @include tablet-view {
+      font-size: $font-XXS;
+    }
+  }
+}
